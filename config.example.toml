@@ -1,0 +1,31 @@
+# anime-overlay örnek yapılandırması
+#
+# Kopyalamak için:
+#   mkdir -p ~/.config/anime-overlay
+#   cp config.example.toml ~/.config/anime-overlay/config.toml
+#
+# Uygulama çalışırken bu dosyayı düzenlersen birkaç saniye içinde uygulanır.
+# Ayrıca tepsi → "Ayarlar…" penceresinden de her şeyi değiştirebilirsin;
+# değişiklikler bu dosyaya otomatik yazılır.
+
+[[overlay]]
+name = "miku"
+file = "~/Görseller/miku.gif"
+x = 1600
+y = 880
+height = 320          # yükseklik (piksel)
+opacity = 1.0         # 0.0 - 1.0
+speed = 1.0           # oynatma hızı
+max_fps = 15          # kare hızı sınırı (oyunlarda CPU tasarrufu)
+# screen = "eDP-1"    # kscreen-doctor -o ile ekran adını gör
+remove_white = "auto" # "auto" | true | false
+
+# İkinci bir karakter/animasyon:
+# [[overlay]]
+# name = "miku-video"
+# file = "~/Görseller/miku.webm"
+# height = 320
+# opacity = 0.9
+# speed = 1.25
+# max_fps = 15
+# remove_white = false
